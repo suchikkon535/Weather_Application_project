@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" id="city-input" placeholder="Search for a city...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <button id="location-btn"><i class="fas fa-location-arrow"></i></button>
+                <button id="unit-toggle">°C / °F</button>
+            </div>
+
+            <!-- Current Weather -->
+            <div class="current-weather">
+                <div class="weather-info">
+                    <h1 id="city-name">New York</h1>
+                    <div class="temp-container">
+                        <span id="temperature">24</span>
+                        <span id="unit">°C</span>
+                    </div>
+                    <p id="weather-description">Sunny</p>
+                    <div class="details">
+                        <p><i class="fas fa-tint"></i> <span id="humidity">60</span>%</p>
+                        <p><i class="fas fa-wind"></i> <span id="wind-speed">12</span> km/h</p>
+                    </div>
+                </div>
+                <div class="weather-icon">
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon">
+                </div>
+            </div>
+
+            <!-- 5-Day Forecast -->
+            <div class="forecast">
+                <h2>5-Day Forecast</h2>
+                <div class="forecast-cards" id="forecast-container">
+                    <!-- Forecast cards will be added dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
